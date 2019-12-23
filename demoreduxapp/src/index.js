@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import {createStore} from "redux"
 import {Provider} from "react-redux"
-import {combineWithDevTools} from "react-devtools-extension"
+import {composeWithDevTools} from "redux-devtools-extension"
+import {rootReducer} from "./rootReducer"
 
 const store = createStore(
     rootReducer,
-    combineWithDevTools()
+    composeWithDevTools()
 )
 // import * as serviceWorker from './serviceWorker';
 // const hello = ()=>({welcome: "hello"})

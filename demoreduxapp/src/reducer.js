@@ -1,8 +1,8 @@
 const initialState = {
-    messageVisibility = false
+    messageVisibility : false
 }
 
-const ToggleReducer = (state=initialState, action)=>{
+ export const ToggleReducer = (state=initialState, action)=>{
     switch(action.type){
         case "Toggle":
         return {messageVisibility: !state.messageVisibility}
